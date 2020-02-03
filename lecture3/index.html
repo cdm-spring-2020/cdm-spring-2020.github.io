@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Composing Digital Media</title>
+    <title>Projects in Digital Composition</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <style>
-
+      pre { padding: 7px;}
       th {color: white; background-color: black; padding-top: 7px; padding-bottom: 7px;}
       td {padding: 3px; }
       table { width: 100%; border-collapse: collapse;}
-      td, th {border: 1px solid black; font-size: 95%; text-align: center;
-      }
+      td, th {border: 1px solid black; font-size: 95%; text-align: center; }
+      code { background-color: white; padding: 2px; }
       body {
         font-family: 'Helvetica Neue', 'Arial', 'sans-serif';
         color: rgba(34,34,34,.77);
@@ -48,8 +48,18 @@
         width: 100%;
         height: 45vh;
       }
+      .meme {
+        height: 35vh;
+        width: auto;
+      }
       .middle {
         background-color: #ffe6cc;
+      }
+      .half {
+        float: left;
+        width: 47%;
+        padding-left: 15px;
+
       }
     </style>
   </head>
@@ -59,11 +69,14 @@
 
 class: middle
 
-# Adobe Photoshop
-
-## A Few Common Tasks
+# Composing Digital Media
 
 <hr>
+
+### Introducing CSS
+
+<hr>
+
 Matthew J. Lavin
 
 Clinical Assistant Professor of English and Director of Digital Media Lab
@@ -75,54 +88,124 @@ Spring 2020
 ---
 class: middle
 
-# Opening and saving files
+# Topics to Cover
+
+<hr>
+
+#### 1. Review of HTML
+
+#### 2. What is CSS? 
+
+#### 3. CSS Syntax
+
+#### 4. CSS Selectors
+
+#### 5. Commonly Used Style Rules
+
+#### 6. How to make your HTML friendly to CSS styling
 
 ---
 class: middle
 
-# Resizing, panning, and zooming
+# How Does HTML Work?
+
+<hr>
+<div class="half">
+<h4>
+  <ul>
+    <li>Uses markup to pass information to the web browser</li> 
+    <li>Links, images, videos, etc. are all inserting using different tags</li>
+    <li>Some tags provide structure, but they don't display</li>
+    <li>Non-displayed tags are often crucial</li>
+    <li>Tags can be nested inside other tags</li>
+    <li>The words "HTML: are inside the <code>title</code> container, which is inside the <code>html</code> container</li>  
+  </div>
+<div class="half">
+<img src="images/HTML_logo.png">
+</div>
 
 ---
 class: middle
 
-# Levels, color balance, hue/saturation
+# What is CSS?
+
+<hr>
+<img class="meme" src="images/philosoraptor.jpg">
+<hr>
+
+#### Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document. Stylesheets separate presentation/display and from content, which makes your HTML file easier to read, among other things. 
 
 ---
 class: middle
 
-# Brushes, Eraser
+# CSS Syntax
+
+<hr>
+
+- #### CSS rules look like this: ```p { color: blue; }```
+
+- #### Multiple rules are separated by semicolons like ```div { color: white; background-color: blue; height: 50px; width: 100px; }```
+
+
+- #### Try it on https://jsfiddle.net/8pz2a15w/
+
+---
+class: middle 
+
+# CSS Can be Found in Several Places
+
+<hr>
+
+- #### CSS external file 
+
+- #### CSS in a style tag
+
+- #### CSS as the value of a style attribute 
+
+- #### See https://www.w3schools.com/css/css_howto.asp
+
+---
+class: middle 
+
+# CSS Selectors
+
+<hr>
+- #### CSS rules apply to any selected element
+- #### <code>p { color: blue; }</code> would apply to all paragraphs
+- #### selecting by class uses a period <code>.first { color: blue; }</code>
+- #### selecting by id uses a # sign <code>#author { color: blue; }</code>
+- #### You can combine selectors (more on this later)
+
+---
+class: middle 
+
+# Commonly Used Style Rules
+
+<hr>
+
+- #### Text Attributes
+- #### Shapes and Sizes, Layout
+- #### Background Colors and Images
+- #### What to Do with Different Screen Sizes
+- #### See https://www.w3schools.com/css/default.asp
 
 ---
 class: middle
 
-# Selecting, Cropping
+# How to Make Your HTML Friendly to CSS Styling
 
----
-class: middle
+<hr>
 
-# Dragging, Nudging
+- #### Think about the containers that will need height and width
+- #### Use divs inside of divs to create effects
+- #### Use the <code>class</code> attribute if you'll be using a certain set of styles more than once
+- #### Use the <code>id</code> attribute for unique aspects of one class member
+- #### The <code>class</code> and <code>id</code> attribute can work on any html tag ... not just divs
+- #### You can add two or more classes to an element to combine effects
+- #### Name your classes and ids simply and/or semantically ... describe the content they contain 
 
----
-class: middle
 
-# Text actions
-
----
-class: middle
-
-# Shapes
-
----
-class: middle
-
-# Layers
-
----
-class: middle
-
-# Filters
-
-    </textarea>
+</textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
     </script>
     <script>
